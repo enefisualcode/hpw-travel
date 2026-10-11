@@ -1,0 +1,63 @@
+:root {
+  --cream: #fffefa;
+  --sand: #f4f4ee;
+  --green: #00a651;
+  --deep: #052f1b;
+  --gold: #ffc400;
+  --gold2: #a66f00;
+  --ink: #111511;
+  --body: #4d554f;
+  --muted: #717971;
+  --line: #d9ded9;
+  --mint: #dff4e8;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo > img {
+  width: 150px;
+  height: 66px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.logo.light {
+  background: #fff;
+  border-radius: 6px;
+  padding: 4px 10px;
+}
+
+.logo.light > img {
+  width: 166px;
+  mix-blend-mode: normal;
+}
+
+.header-cta,
+.btn,
+.package,
+.table,
+.document,
+.gallery img {
+  border-radius: 10px;
+}
+
+.hero-photo {
+  box-shadow: 0 22px 50px rgba(0, 166, 81, .12);
+}
+
+.credibility {
+  background: linear-gradient(110deg, #008f45, #00a651);
+}
+
+.consult > div {
+  background: linear-gradient(120deg, #052f1b, #007f3e);
+}
+
+@media (max-width: 760px) {
+  .logo > img { width: 118px; height: 54px; }
+  .logo.light > img { width: 148px; }
+}
